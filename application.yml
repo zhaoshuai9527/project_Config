@@ -1,0 +1,27 @@
+server:
+  port: 9001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9999/eureka
+  instance:
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: project-Base
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://120.77.145.221:3306/Project_DB?characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 0
+
+  jpa:
+    database: MySQL
+    show-sql: true
+#    generate-ddl: true
+
+#   update:无表的时候根据entity创建表
+    hibernate:
+      ddl-auto: update
