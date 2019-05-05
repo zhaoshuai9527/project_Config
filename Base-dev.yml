@@ -1,6 +1,7 @@
 server:
   port: 9001
-
+project:
+  host: 127.0.0.1
 eureka:
   client:
     serviceUrl:
