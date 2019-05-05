@@ -29,3 +29,12 @@ spring:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      
+      #验证连接是否有效。此参数必须设置为非空字符串，下面三项设置成true才能生效
+     validationQuery: SELECT 1
+      #指明连接是否被空闲连接回收器(如果有)进行检验.如果检测失败,则连接将被从池中去除.
+     testWhileIdle: true
+      #指明是否在从池中取出连接前进行检验,如果检验失败,则从池中去除连接并尝试取出另一个
+     testOnBorrow: true
+      #指明是否在归还到池中前进行检验
+     testOnReturn: false
