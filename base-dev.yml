@@ -9,6 +9,8 @@ eureka:
     prefer-ip-address: true
 
 spring:
+  rabbitmq:
+    host: 120.77.145.221
   application:
     name: project-Base
   datasource:
@@ -16,8 +18,7 @@ spring:
     url: jdbc:mysql://120.77.145.221:3306/Project_DB?characterEncoding=utf-8&useSSL=true
     username: root
     password: 1
-  rabbitmq:
-    host: 120.77.145.221
+
   jpa:
     database: MySQL
     show-sql: true
